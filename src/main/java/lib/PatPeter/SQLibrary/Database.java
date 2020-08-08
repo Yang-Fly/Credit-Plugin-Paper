@@ -322,7 +322,6 @@ public abstract class Database {
 			keys.add(key.getLong(1));
 		return keys;
 	}
-	
 	/**
 	 * Method for executing builders.
 	 * 
