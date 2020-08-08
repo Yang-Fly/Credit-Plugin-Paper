@@ -1,0 +1,34 @@
+name: Credit
+version: 0.0.1-SNAPSHOT
+main: mc.yang.CreditPlugin.CreditPlugin
+api-version: "1.16"
+prefix: "Credit"
+load: STARTUP
+authors: [Xray_Yang]
+description: Credit System
+commands:
+  credit:
+    description: Credit System
+    usage: |
+      /cgcredit help - Show this help.
+      /cgcredit version - Get current version.
+      /cgcredit get - Get your own or other's credit score.
+      /cgcredit top - Show the score top 10.
+      /cgcredit add - Add someone's credit score.
+      /cgcredit reduce - Reduce someone's credit score.
+      /cgcredit set - Set someone's credit score.
+      /cgcredit full - Set someone's credit score to full.
+      /cgcredit clear - Set someone's credit score to 0.
+      /cgcredit reload - Reload Credit Configuration
+permissions:
+  credit.admin:
+    description: Credit admin permission.
+    default: op
+  credit.player:
+    description: Credit player permission.
+    default: true
+  credit.*:
+    description: Gives access to all Credit commands.
+    children:
+      credit.player: true
+      credit.admin: true

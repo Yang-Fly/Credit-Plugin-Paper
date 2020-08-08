@@ -1,0 +1,12 @@
+#CGCredit Config File v0.0.1
+#Default score, default: 80
+Default-score: 80
+
+#Full score, default: 100
+Full-score: 100
+
+#Language, zh or en, developing, default: en
+language: en
+
+#Top number, default: 10
+Top-number: 10
